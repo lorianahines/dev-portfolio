@@ -33,13 +33,13 @@ class App extends React.Component{
 
   handleOnSubmit = async (evt) =>{
     evt.preventDefault();
-    const { name, subject, email, message } = this.state
-    const sendEmail =  await axios.post('http://localhost:3001/contact', {
-      name,
-      subject,
-      email,
-      message: `This message is from ${name} at email: ${email}. They said: ${message}`
-    })
+    // const { name, subject, email, message } = this.state
+    // const sendEmail =  await axios.post('http://localhost:3001/contact', {
+    //   name,
+    //   subject,
+    //   email,
+    //   message: `This message is from ${name} at email: ${email}. They said: ${message}`
+    // })
 
     this.setState({ messageSent: true })
     this.clearForm();

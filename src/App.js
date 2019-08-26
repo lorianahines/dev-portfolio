@@ -41,13 +41,13 @@ class App extends React.Component{
     //   message: `This message is from ${name} at email: ${email}. They said: ${message}`
     // })
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ "form-name": "contact", ...this.state })
+    // })
+    //   .then(() => alert("Success!"))
+    //   .catch(error => alert(error));
 
     this.setState({ messageSent: true })
     this.clearForm();

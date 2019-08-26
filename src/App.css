@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+
+@font-face{
+  font-family: "Brusher";
+  src: url('./assets/fonts/Brusher.ttf')
+}
+
+*{
+  margin: 0;
+}
+
+body{
+  min-height: 100vh
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Comfortaa,cursive;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+header{
+  margin-top: 30px;
+}
+
+.logo-ctn{
+  transform: rotate(-40deg);
+  position: absolute;
+  margin: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-bg{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #5271ff;
+  position: absolute;
+  z-index: -1;
+
+}
+#code{
+  line-height: 0.6;
+  font-size: 1rem;
+}
+
+#loriana{
+  color:  #5ce1e6;
+  line-height: 0.6;
+  font-size: 3rem;
+  font-family: "brusher";
+}
+
+/* -----------------------------------------Nav Bar ------------------------- */
+body{
+  height: 100vh 
+}
+nav{
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+.links{
+  padding: 5px;
+  background: #5271ff;
+  margin-bottom: 10px
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  width: 100%
+}
+
+#about-ctn{
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  justify-content: space-around;
+  /* border:solid green; */
+  animation: fadeee 2s 
+}
+
+#mail-to{
+  color: rgb(92, 225, 230);
+}
+#mail-to:hover{
+  color: black
+}
+
+#bio-ctn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h5{
+  color: rgb(82, 113, 255);
+}
+
+#bio{
+  width: 80% ;
+  line-height: 2rem;
+  margin-bottom: 30px
+}
+
+#designer{
+  font-family: "brusher";
+  color:  #5ce1e6;
+}
+#titles{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sleek{
+  font-family: "brusher";
+  color: #ff0066;
+  font-size: 2rem
+}
+
+#eloquent{
+  font-family: "brusher";
+  color: rgb(82, 113, 255);
+  font-size: 2rem
+}
+
+#user{
+  font-weight: 900;
+  color: orange;
+  font-size: 1.5rem
+}
+#grow{
+  font-weight: 900;
+  color: white;
+  font-size: 1.5rem;
+  -webkit-text-stroke: 1px rgb(92, 225, 230);
+}
+
+
+footer{
+  height: 60px;
+  background: rgb(82, 113, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* position: fixed;  */
+  /* bottom: 0;  */
+}
+
+.social{
+  width: 20px;
+  height: 32px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer-text{
+  font-size: 0.3rem
+}
+/* --------------------- Contact Form ------------------------- */
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+  animation: fadeee 2s 
+}
+
+.input-ctn{
+  margin: 1.2%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: left
+}
+
+.input-ctn:first-child{
+  margin-top: 0
+}
+
+label{
+  font-weight: 900;
+}
+
+input, textarea{
+  border-radius: 15px;
+  border: 2px solid #24283D;
+  padding: 5px 10px;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 10px;
+  transition: ease-out 0.5s;
+  font-size: 16px
+}
+
+input:focus, textarea:focus{
+  outline: none;
+  color:  rgb(82, 113, 255);
+  border-color: rgba(92, 225, 230, 1);
+  transform: scale(1.2);
+}
+#contact-btn{
+  color: white;
+  border: none;
+  margin-top: 10px;
+  background-color: rgba(92, 225, 230, 1);
+  width: 100px;
+  height: 25px;
+  border-radius: 15px;
+}
+
+#contact-btn:hover{
+  background: rgb(82, 113, 255);
+}
+
+.thank-you{
+  margin-top: 25%;
+  margin-bottom: 25%;
+  /* height: 65vh; */
+  font-family: "Brusher";
+  font-size: 8rem;
+  color: rgba(92, 225, 230, 0.5);
+  animation: fadeee 2s ;
+  /* border: solid brown */
+}
+
+
+/* -----------------------Project page------------------- */
+.project-card-ctn > .project-ctn:nth-child(even){
+  background-color: rgba(92, 225, 230, 0.8);
+}
+
+.project-card-ctn{
+  margin-bottom: 100px;
+  /* padding: 0 5% */
+}
+.project-ctn{
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  animation: fadeee 2s 
+}
+
+@keyframes fadeee{
+  0%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  }
+}
+
+.project-img{
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px
+}
+
+.project-description{
+  margin-top: 20px;
+  line-height: 25px;
+  text-align: left
+}
+.tech-heading{
+  margin-top: 20px;
+}
+.icon-ctn{
+  display: flex;
+}
+.skill-ctn{
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.skill-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.5rem;
+  font-weight: 800;
+  margin-right: 10px
+}
+.skill-logo{
+  width: 30px;
+}
+.link-logo{
+  width: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.skill-list{
+  display: flex;
+  width: 200px;
+}
+.project-links{
+  display: flex;
+  justify-content: inherit;
+  width: 60px;
+  margin-left: 20px
+}
+
+
+
+@media (max-width: 750px){
+  nav{
+    width: 100%
+  }
+  #about-ctn{
+    flex-direction: column;
+    
+  }
+  #bio{
+    width: 90%;
+    margin: 20px;
+    margin-bottom: 7px
+  }
+  .logo-ctn{
+    position: relative;
+    margin: 30px;
+  }
+  .logo-bg{
+    height: 50px;
+    width: 50px;
+  }
+  #code{
+    line-height: 0.6;
+    font-size: 0.5rem;
+  }
+  
+  #loriana{
+    line-height: 0.6;
+    font-size: 1.5rem;
+  }
+  #profile{
+    width: 250px;
+    height: 250px
+  }
+  #titles{
+    font-size: 1rem;
+  }
+  form{
+    margin-top: 20px
+  }
+  
+  .input-ctn{
+    width: 70%;
+    margin-top: 30px;
+
+  }
+  .project-card-ctn{
+    padding: 0;
+  }
+  .project-ctn{
+    flex-direction: column;
+  }
+  .project-img{
+    width: 100%
+  }
+  .skill-ctn{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto
+  }
+  .icon-ctn{
+    justify-content: space-between;
+    margin-right: 5px
+  }
+ 
+}

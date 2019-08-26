@@ -4,7 +4,6 @@ const ContactForm = ({handleOnChange, handleOnSubmit, name, subject, email, mess
   if(!messageSent){
     return(
       <form method="POST" data-netlify="true" name="contact" onSubmit={handleOnSubmit}>
-        <input type="hidden" name="form-name" value="contact" />
         <div className='input-ctn'>
           <label htmlFor='name'>Name</label>
           <input onChange={handleOnChange} name='name' type='text' value={name} required/>

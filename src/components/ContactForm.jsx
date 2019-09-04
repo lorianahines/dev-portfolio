@@ -3,9 +3,7 @@ import React from 'react'
 const ContactForm = ({handleOnChange, handleOnSubmit, name, subject, email, message, messageSent}) => {
   if(!messageSent){
     return(
-      <form name="contact" method="post" data-netlify="true">
-        <input type="hidden" name="contact" value="contact" />
-
+      <form name="contact" method="post" data-netlify="true"  onSubmit={this.handleOnSubmit}>
         <div className='input-ctn'>
           <label htmlFor='name'>Name</label>
           <input onChange={handleOnChange} name='name' type='text' value={name} required/>
